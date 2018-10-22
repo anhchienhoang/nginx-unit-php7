@@ -26,6 +26,7 @@ RUN cd /tmp && \
     && make install \
     && rm -rf /tmp/unit-$UNIT_VERSION
 
+COPY php.ini /php.ini
 COPY config.json /config.json
 COPY entrypoint.sh /entrypoint.sh
 
